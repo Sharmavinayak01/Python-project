@@ -1,0 +1,92 @@
+.chat-input {
+  min-height: 70px;
+  padding: 10px 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(125, 99, 255, 0.55);
+
+  background: rgba(12, 17, 42, 0.9);
+
+  box-shadow: 0 0 30px rgba(77, 50, 255, 0.12);
+}
+
+.chat-input input {
+  flex: 1;
+  min-width: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+  font-size: 15px;
+}
+
+.chat-input input::placeholder {
+  color: #666d8f;
+}
+
+.input-icon {
+  border: none;
+  background: transparent;
+  color: #9ca4c9;
+
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.tool-button {
+  padding: 9px 13px;
+
+  border: none;
+  border-radius: 12px;
+
+  color: #b8bfe0;
+
+  background: rgba(120, 100, 255, 0.12);
+
+  cursor: pointer;
+}
+
+.mic-button {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  color: white;
+  background: rgba(100, 80, 255, 0.15);
+
+  cursor: pointer;
+}
+
+.send-button {
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  border-radius: 14px;
+
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #4c7dff,
+    #9d3cff
+  );
+
+  box-shadow: 0 0 20px rgba(115, 66, 255, 0.5);
+
+  cursor: pointer;
+}
+
+.send-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
